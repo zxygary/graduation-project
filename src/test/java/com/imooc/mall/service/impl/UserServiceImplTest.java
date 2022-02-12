@@ -12,31 +12,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-<<<<<<< HEAD
-import static org.junit.Assert.*;
-
-@Transactional
-public class UserServiceImplTest extends MallApplicationTests {
-
-    public static final String USERNAME = "jack";
-
-    public static final String PASSWORD = "123456";
-
-    @Autowired
-    private IUserService userService;
-
-    @Before
-    public void register() {
-        User user = new User(USERNAME, PASSWORD, "jack@qq.com", RoleEnum.CUSTOMER.getCode());
-        userService.register(user);
-    }
-
-    @Test
-    public void login() {
-        ResponseVo<User> responseVo = userService.login(USERNAME, PASSWORD);
-        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
-    }
-=======
 /**
  * Created by 廖师兄
  */
@@ -61,5 +36,4 @@ public class UserServiceImplTest extends MallApplicationTests {
 		ResponseVo<User> responseVo = userService.login(USERNAME, PASSWORD);
 		Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
 	}
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 }

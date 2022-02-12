@@ -5,11 +5,7 @@
 
 <generatorConfiguration>
 <!--    windows下路径, D:\downloads\xxx.jar-->
-<<<<<<< HEAD
-    <classPathEntry location="D:\mysql-connector-java-5.1.6.jar" />
-=======
     <classPathEntry location="/Users/admin/Desktop/mysql-connector-java-5.1.6.jar" />
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
 
@@ -23,11 +19,7 @@
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3306/mall?characterEncoding=utf-8"
                         userId="root"
-<<<<<<< HEAD
-                        password="ZXY123456">
-=======
                         password="123456">
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
         </jdbcConnection>
 
         <javaTypeResolver >
@@ -51,18 +43,10 @@
 <!--        <table tableName="mall_order_item" domainObjectName="OrderItem" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 <!--        <table tableName="mall_user" domainObjectName="User" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
 <!--        <table tableName="mall_category" domainObjectName="Category" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
-<<<<<<< HEAD
         <table tableName="mall_product" domainObjectName="Product" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false">
-            <columnOverride column="detail" jdbcType="VARCHAR"/>
-            <columnOverride column="sub_images" jdbcType="VARCHAR"/>
+            <columnOverride column="detail" jdbcType="VARCHAR" />
+            <columnOverride column="sub_images" jdbcType="VARCHAR" />
         </table>
-=======
-<!--        <table tableName="mall_product" domainObjectName="Product" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false">-->
-<!--            <columnOverride column="detail" jdbcType="VARCHAR" />-->
-<!--            <columnOverride column="sub_images" jdbcType="VARCHAR" />-->
-<!--        </table>-->
-        <table tableName="mall_shipping" domainObjectName="Shipping" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 
     </context>
 </generatorConfiguration>

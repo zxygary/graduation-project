@@ -9,36 +9,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-<<<<<<< HEAD
-import java.net.UnknownServiceException;
-=======
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-<<<<<<< HEAD
-import static org.junit.Assert.*;
-@Slf4j
-public class CategoryServiceTest extends MallApplicationTests {
-
-    @Autowired
-    private ICategoryService categoryService;
-
-    @Test
-    public void selectAll() {
-
-        ResponseVo<List<CategoryVo>> responseVo = categoryService.selectAll();
-        Assert.assertEquals(ResponseEnum.SUCCESS.getCode(), responseVo.getStatus());
-    }
-
-    @Test
-    public void findSubCategoryId() {
-        Set<Integer> set = new HashSet<>();
-        categoryService.findSubCategoryId(100001, set);
-        log.info("set={}", set);
-    }
-=======
 /**
  * Created by 廖师兄
  */
@@ -60,5 +34,4 @@ public class CategoryServiceTest extends MallApplicationTests {
 		categoryService.findSubCategoryId(100001, set);
 		log.info("set={}", set);
 	}
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 }

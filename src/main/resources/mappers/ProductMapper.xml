@@ -186,20 +186,4 @@
       </foreach>
     </if>
   </select>
-<<<<<<< HEAD
-=======
-  <select id="selectByProductIdSet" resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from mall_product
-    <where>
-      <if test="productIdSet.size() > 0">
-        id in
-        <foreach collection="productIdSet" item="item" index="index" open="(" separator="," close=")">
-          #{item}
-        </foreach>
-      </if>
-    </where>
-  </select>
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 </mapper>

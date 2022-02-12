@@ -30,8 +30,4 @@ public class Product {
     private Date createTime;
 
     private Date updateTime;
-<<<<<<< HEAD
-    }
-=======
 }
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668

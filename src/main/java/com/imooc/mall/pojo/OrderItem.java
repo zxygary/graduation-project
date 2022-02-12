@@ -1,14 +1,8 @@
 package com.imooc.mall.pojo;
 
-import lombok.Data;
-
 import java.math.BigDecimal;
 import java.util.Date;
-<<<<<<< HEAD
-=======
 
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
-@Data
 public class OrderItem {
     private Integer id;
 
@@ -31,7 +25,6 @@ public class OrderItem {
     private Date createTime;
 
     private Date updateTime;
-<<<<<<< HEAD
 
     public Integer getId() {
         return id;
@@ -120,6 +113,4 @@ public class OrderItem {
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
     }
-=======
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
 }

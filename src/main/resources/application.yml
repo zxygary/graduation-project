@@ -1,10 +1,9 @@
 spring:
-<<<<<<< HEAD
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ZXY123456
-    url:  jdbc:mysql://127.0.0.1:3306/mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
@@ -17,7 +16,3 @@ server:
   servlet:
     session:
       timeout: 120
-=======
-  profiles:
-    active: dev
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668

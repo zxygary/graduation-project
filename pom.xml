@@ -44,42 +44,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-<<<<<<< HEAD
-            <version>1.18.12</version>
         </dependency>
-=======
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.13</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <!--也可以用 fastjson  -->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.5</version>
-        </dependency>
-
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
     </dependencies>
 
     <build>
@@ -99,10 +64,6 @@
                 </configuration>
             </plugin>
         </plugins>
-<<<<<<< HEAD
-=======
-        <finalName>mall</finalName>
->>>>>>> ca76460b9e005cb8b9c256e8058f1a03483ca668
     </build>
 
 </project>
