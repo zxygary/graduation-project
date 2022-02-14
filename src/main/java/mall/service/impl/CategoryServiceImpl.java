@@ -5,6 +5,7 @@ import mall.pojo.Category;
 import mall.service.ICategoryService;
 import mall.vo.CategoryVo;
 import mall.vo.ResponseVo;
+import mall.consts.MallConst;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,8 +15,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import static mall.consts.MallConst.ROOT_PARENT_ID;
 
 /**
  * Created by 廖师兄
@@ -46,7 +45,7 @@ public class CategoryServiceImpl implements ICategoryService {
 
 		//lambda + stream
 		List<CategoryVo> categoryVoList = categories.stream()
-				.filter(e -> e.getParentId().equals(ROOT_PARENT_ID))
+				.filter(e -> e.getParentId().equals(MallConst.ROOT_PARENT_ID))
 				.map(this::category2CategoryVo)
 				.sorted(Comparator.comparing(CategoryVo::getSortOrder).reversed())
 				.collect(Collectors.toList());
