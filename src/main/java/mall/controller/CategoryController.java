@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * Created by 廖师兄
- */
 @RestController
 public class CategoryController {
 

@@ -7,9 +7,6 @@ import org.springframework.validation.BindingResult;
 
 import java.util.Objects;
 
-/**
- * Created by 廖师兄
- */
 @Data
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 public class ResponseVo<T> {

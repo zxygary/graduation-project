@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Objects;
 
-/**
- * Created by 廖师兄
- */
 @ControllerAdvice
 public class RuntimeExceptionHandler {
 

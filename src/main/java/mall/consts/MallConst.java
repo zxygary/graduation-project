@@ -1,8 +1,5 @@
 package mall.consts;
 
-/**
- * Created by 廖师兄
- */
 public class MallConst {
 	public static final String CURRENT_USER = "currentUser";
 

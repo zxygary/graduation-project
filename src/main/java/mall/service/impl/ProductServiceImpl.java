@@ -23,9 +23,6 @@ import static mall.enums.ProductStatusEnum.DELETE;
 import static mall.enums.ProductStatusEnum.OFF_SALE;
 import static mall.enums.ResponseEnum.PRODUCT_OFF_SALE_OR_DELETE;
 
-/**
- * Created by 廖师兄
- */
 @Service
 @Slf4j
 public class ProductServiceImpl implements IProductService {

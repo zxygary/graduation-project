@@ -3,9 +3,6 @@ package mall.service;
 import mall.pojo.User;
 import mall.vo.ResponseVo;
 
-/**
- * Created by 廖师兄
- */
 public interface IUserService {
 
 	/**

@@ -14,9 +14,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by 廖师兄
- */
 @Slf4j
 public class CategoryServiceTest extends MallApplicationTests {
 

@@ -10,9 +10,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * Created by 廖师兄
- */
 public class IProductServiceTest extends MallApplicationTests {
 
 	@Autowired

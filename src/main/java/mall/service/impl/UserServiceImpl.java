@@ -12,9 +12,6 @@ import org.springframework.util.DigestUtils;
 
 import java.nio.charset.StandardCharsets;
 
-/**
- * Created by 廖师兄
- */
 @Service
 public class UserServiceImpl implements IUserService {
 
