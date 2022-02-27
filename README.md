@@ -16,6 +16,7 @@
 > Idea 一定要用开发版不要用社区版  
 > SqringBoot 2.1.7  
 > Rabbitmq 3.8.2 (在Windows上安装需要提前安装earlang 22.x)
+> MySQL 5.5
 
 ## 更新日志
 >2022/2/27 将后端部分中的支付系统上传至github，并且二者联调成功  
