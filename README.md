@@ -15,7 +15,7 @@
 > Meaven 3.6  
 > Idea 一定要用开发版不要用社区版  
 > SqringBoot 2.1.7  
-> Rabbitmq 3.8.2 (在Windows上安装需要提前安装earlang 22.x)
+> Rabbitmq 3.8.2 (在Windows上安装需要提前安装earlang 22.x)  
 > MySQL 5.5
 
 ## 更新日志
