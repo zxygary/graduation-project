@@ -1,9 +1,12 @@
 # graduation-project
+  
+> 项目演示地地址：http://zxygary.com
 
 ## 这是一个一个前后端分离的电子商务系统
 
 感谢慕课网提供的课程。
-> 原课程购买地址：<https://coding.imooc.com/class/392.html>
+> 后端课程购买地址：<https://coding.imooc.com/class/392.html>  
+> 前端课程购买地址：https://coding.imooc.com/class/397.html
 
 ## 做这个毕业设计的原因
 
@@ -19,6 +22,10 @@
 > MySQL 5.5
 
 ## 更新日志
+>2022/3/1 1&emsp;对前端代码进行为期一个月的优化，调试完再上传至GitHub；  
+          2&emsp;在本地测试RabbitMQ消息队列时，似乎还有些地方没有调试好，总是循环报错。正在寻找解决方案；  
+          3&emsp;写了一点将部署至云端CentOS操作教程，后续会随着前端代码优化完成后一同上传过来；  
+          4&emsp;最近在忙着写毕业论文，竟然有一天忘了commit打卡了  
 >2022/2/27 将后端部分中的支付系统上传至github，并且二者联调成功  
 >2022/2/20 删除了部分敏感信息，删除了涉及个人隐私的信息，优化了文件目录  
 >2022/2/14 上传数据库代码至GitHub  
