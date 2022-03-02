@@ -1,6 +1,6 @@
 # graduation-project
   
-> 项目演示地地址：http://zxygary.com
+> 项目演示地地址：zxygary.com
 
 ## 这是一个一个前后端分离的电子商务系统
 
