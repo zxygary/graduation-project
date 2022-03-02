@@ -1,12 +1,12 @@
 # graduation-project
   
-> <a href = "zxygary.com"> 项目演示地址（zxygary.com）
+> <a href = "http://zxygary.com" target = "_blank"> 项目演示地址（zxygary.com）
 
 ## 这是一个一个前后端分离的电子商务系统
 
 感谢慕课网提供的课程。
-> 后端课程购买地址：<https://coding.imooc.com/class/392.html>  
-> 前端课程购买地址：https://coding.imooc.com/class/397.html
+> <a href = "https://coding.imooc.com/class/392.html" target = "_blank">后端课程购买地址  
+> <a href = "https://coding.imooc.com/class/397.html" target = "_blank">前端课程购买地址
 
 ## 做这个毕业设计的原因
 
