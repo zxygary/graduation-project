@@ -1,6 +1,7 @@
 # graduation-project
   
-> [项目演示地址](http://zxygary.com)
+> [项目演示地址](http://zxygary.com)  
+> [前端代码仓库](https://github.com/zxygary/graduation-front)
 
 ## 这是一个一个前后端分离的电子商务系统
 
