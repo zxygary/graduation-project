@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.imooc.mall.dao.OrderItemMapper">
-  <resultMap id="BaseResultMap" type="mall.pojo.OrderItem">
+  <resultMap id="BaseResultMap" type="com.imooc.mall.pojo.OrderItem">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="order_no" jdbcType="BIGINT" property="orderNo" />
@@ -28,7 +28,7 @@
     delete from mall_order_item
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="mall.pojo.OrderItem">
+  <insert id="insert" parameterType="com.imooc.mall.pojo.OrderItem">
     insert into mall_order_item (id, user_id, order_no, 
       product_id, product_name, product_image, 
       current_unit_price, quantity, total_price, 
@@ -38,7 +38,7 @@
       #{currentUnitPrice,jdbcType=DECIMAL}, #{quantity,jdbcType=INTEGER}, #{totalPrice,jdbcType=DECIMAL}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="mall.pojo.OrderItem">
+  <insert id="insertSelective" parameterType="com.imooc.mall.pojo.OrderItem">
     insert into mall_order_item
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -111,7 +111,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="mall.pojo.OrderItem">
+  <update id="updateByPrimaryKeySelective" parameterType="com.imooc.mall.pojo.OrderItem">
     update mall_order_item
     <set>
       <if test="userId != null">
@@ -147,7 +147,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="mall.pojo.OrderItem">
+  <update id="updateByPrimaryKey" parameterType="com.imooc.mall.pojo.OrderItem">
     update mall_order_item
     set user_id = #{userId,jdbcType=INTEGER},
       order_no = #{orderNo,jdbcType=BIGINT},
@@ -161,4 +161,35 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <insert id="batchInsert" parameterType="list">
+    insert into mall_order_item (user_id, order_no,
+      product_id, product_name, product_image,
+      current_unit_price, quantity, total_price)
+    values
+    <foreach collection="orderItemList" index="index" item="item" separator=",">
+      (
+      #{item.userId},
+      #{item.orderNo},
+      #{item.productId},
+      #{item.productName},
+      #{item.productImage},
+      #{item.currentUnitPrice},
+      #{item.quantity},
+      #{item.totalPrice}
+      )
+    </foreach>
+  </insert>
+  <select id="selectByOrderNoSet" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mall_order_item
+    <where>
+      <if test="orderNoSet.size() > 0">
+        order_no in
+        <foreach collection="orderNoSet" item="item" index="index" open="(" separator="," close=")">
+          #{item}
+        </foreach>
+      </if>
+    </where>
+  </select>
 </mapper>

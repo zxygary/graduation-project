@@ -18,6 +18,9 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+/**
+ * Created by 廖师兄
+ */
 @Slf4j
 @Service
 public class PayServiceImpl implements IPayService {
@@ -49,7 +52,7 @@ public class PayServiceImpl implements IPayService {
 		payInfoMapper.insertSelective(payInfo);
 
 		PayRequest request = new PayRequest();
-		request.setOrderName("10526293-朱翔宇的毕业设计");
+		request.setOrderName("10526293-亿企买");
 		request.setOrderId(orderId);
 		request.setOrderAmount(amount.doubleValue());
 		request.setPayTypeEnum(bestPayTypeEnum);

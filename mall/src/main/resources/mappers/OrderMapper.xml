@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.imooc.mall.dao.OrderMapper">
-  <resultMap id="BaseResultMap" type="mall.pojo.Order">
+  <resultMap id="BaseResultMap" type="com.imooc.mall.pojo.Order">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="order_no" jdbcType="BIGINT" property="orderNo" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
@@ -31,7 +31,7 @@
     delete from mall_order
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="mall.pojo.Order">
+  <insert id="insert" parameterType="com.imooc.mall.pojo.Order">
     insert into mall_order (id, order_no, user_id, 
       shipping_id, payment, payment_type, 
       postage, status, payment_time, 
@@ -43,7 +43,7 @@
       #{sendTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP}, #{closeTime,jdbcType=TIMESTAMP}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="mall.pojo.Order">
+  <insert id="insertSelective" parameterType="com.imooc.mall.pojo.Order">
     insert into mall_order
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -134,7 +134,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="mall.pojo.Order">
+  <update id="updateByPrimaryKeySelective" parameterType="com.imooc.mall.pojo.Order">
     update mall_order
     <set>
       <if test="orderNo != null">
@@ -179,7 +179,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="mall.pojo.Order">
+  <update id="updateByPrimaryKey" parameterType="com.imooc.mall.pojo.Order">
     update mall_order
     set order_no = #{orderNo,jdbcType=BIGINT},
       user_id = #{userId,jdbcType=INTEGER},
@@ -196,4 +196,16 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="selectByUid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mall_order
+    where user_id = #{uid,jdbcType=INTEGER}
+  </select>
+  <select id="selectByOrderNo" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from mall_order
+    where order_no = #{orderNo,jdbcType=INTEGER}
+  </select>
 </mapper>

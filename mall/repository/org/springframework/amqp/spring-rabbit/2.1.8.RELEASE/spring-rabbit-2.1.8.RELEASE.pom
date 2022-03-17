@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.springframework.amqp</groupId>
+  <artifactId>spring-rabbit</artifactId>
+  <version>2.1.8.RELEASE</version>
+  <name>Spring RabbitMQ Support</name>
+  <description>Spring RabbitMQ Support</description>
+  <url>https://projects.spring.io/spring-amqp</url>
+  <organization>
+    <name>SpringIO</name>
+    <url>https://spring.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>garyrussell</id>
+      <name>Gary Russell</name>
+      <email>grussell@pivotal.io</email>
+      <roles>
+        <role>project lead</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>artembilan</id>
+      <name>Artem Bilan</name>
+      <email>abilan@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>dsyer</id>
+      <name>Dave Syer</name>
+      <email>dsyer@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>markfisher</id>
+      <name>Mark Fisher</name>
+      <email>mfisher@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>mpollack</id>
+      <name>Mark Pollack</name>
+      <email>mpollack@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>jbrisbin</id>
+      <name>Jon Brisbin</name>
+      <email>jbrisbin@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>tomas.lukosius</id>
+      <name>Tomas Lukosius</name>
+      <email>tomas.lukosius@opencredo.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/spring-projects/spring-amqp.git</connection>
+    <developerConnection>scm:git:git@github.com:spring-projects/spring-amqp.git</developerConnection>
+    <url>https://github.com/spring-projects/spring-amqp</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.amqp</groupId>
+      <artifactId>spring-amqp</artifactId>
+      <version>2.1.8.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.rabbitmq</groupId>
+      <artifactId>amqp-client</artifactId>
+      <version>5.4.3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.rabbitmq</groupId>
+      <artifactId>http-client</artifactId>
+      <version>2.1.0.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-messaging</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-core</artifactId>
+      <version>3.2.11.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.11.2</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.projectreactor</groupId>
+  <artifactId>reactor-core</artifactId>
+  <version>3.2.11.RELEASE</version>
+  <name>Non-Blocking Reactive Foundation for the JVM</name>
+  <description>Non-Blocking Reactive Foundation for the JVM</description>
+  <url>https://github.com/reactor/reactor-core</url>
+  <organization>
+    <name>reactor</name>
+    <url>https://github.com/reactor</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>smaldini</id>
+      <name>Stephane Maldini</name>
+      <email>smaldini@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>akarnokd</id>
+      <name>David Karnok</name>
+      <email>akarnokd@gmail.com</email>
+    </developer>
+    <developer>
+      <id>simonbasle</id>
+      <name>Simon Baslé</name>
+      <email>sbasle@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>rsivaram</id>
+      <name>Rajini Sivaram</name>
+      <email>rsivaram@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>sdeleuze</id>
+      <name>Sébastien Deleuze</name>
+      <email>sdeleuze@pivotal.io</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/reactor/reactor-core</connection>
+    <developerConnection>scm:git:git://github.com/reactor/reactor-core</developerConnection>
+    <url>https://github.com/reactor/reactor-core</url>
+  </scm>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/reactor/reactor-core/issues</url>
+  </issueManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.2</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-core</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib</artifactId>
+      <version>1.2.51</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.reactivestreams</groupId>
+      <artifactId>reactive-streams</artifactId>
+      <version>1.0.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.12</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

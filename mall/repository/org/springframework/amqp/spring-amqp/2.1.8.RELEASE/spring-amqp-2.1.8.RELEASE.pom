@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.springframework.amqp</groupId>
+  <artifactId>spring-amqp</artifactId>
+  <version>2.1.8.RELEASE</version>
+  <name>Spring AMQP Core</name>
+  <description>Spring AMQP Core</description>
+  <url>https://projects.spring.io/spring-amqp</url>
+  <organization>
+    <name>SpringIO</name>
+    <url>https://spring.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>garyrussell</id>
+      <name>Gary Russell</name>
+      <email>grussell@pivotal.io</email>
+      <roles>
+        <role>project lead</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>artembilan</id>
+      <name>Artem Bilan</name>
+      <email>abilan@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>dsyer</id>
+      <name>Dave Syer</name>
+      <email>dsyer@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>markfisher</id>
+      <name>Mark Fisher</name>
+      <email>mfisher@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>mpollack</id>
+      <name>Mark Pollack</name>
+      <email>mpollack@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>jbrisbin</id>
+      <name>Jon Brisbin</name>
+      <email>jbrisbin@pivotal.io</email>
+    </developer>
+    <developer>
+      <id>tomas.lukosius</id>
+      <name>Tomas Lukosius</name>
+      <email>tomas.lukosius@opencredo.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/spring-projects/spring-amqp.git</connection>
+    <developerConnection>scm:git:git@github.com:spring-projects/spring-amqp.git</developerConnection>
+    <url>https://github.com/spring-projects/spring-amqp</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-messaging</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-oxm</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.1.9.RELEASE</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.retry</groupId>
+      <artifactId>spring-retry</artifactId>
+      <version>1.2.4.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.9.9</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.9.9</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>2.9.9</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+</project>

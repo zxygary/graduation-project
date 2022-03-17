@@ -24,7 +24,7 @@ import java.util.Map;
 public class PayController {
 
 	@Autowired
-	private PayServiceImpl payServiceImpl;
+	private PayServiceImpl payService;
 
 	@Autowired
 	private WxPayConfig wxPayConfig;
@@ -34,7 +34,7 @@ public class PayController {
 							   @RequestParam("amount") BigDecimal amount,
 							   @RequestParam("payType") BestPayTypeEnum bestPayTypeEnum
 							   ) {
-		PayResponse response = payServiceImpl.create(orderId, amount, bestPayTypeEnum);
+		PayResponse response = payService.create(orderId, amount, bestPayTypeEnum);
 
 		//支付方式不同，渲染就不同, WXPAY_NATIVE使用codeUrl,  ALIPAY_PC使用body
 		Map<String, String> map = new HashMap<>();
@@ -54,13 +54,13 @@ public class PayController {
 	@PostMapping("/notify")
 	@ResponseBody
 	public String asyncNotify(@RequestBody String notifyData) {
-		return payServiceImpl.asyncNotify(notifyData);
+		return payService.asyncNotify(notifyData);
 	}
 
 	@GetMapping("/queryByOrderId")
 	@ResponseBody
 	public PayInfo queryByOrderId(@RequestParam String orderId) {
 		log.info("查询支付记录...");
-		return payServiceImpl.queryByOrderId(orderId);
+		return payService.queryByOrderId(orderId);
 	}
 }
